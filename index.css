@@ -1,0 +1,103 @@
+ul {list-style: none; padding:0; margin:0;}
+.chasu {
+    display:inline-block;
+    width: 55px;
+    font-size: initial;
+}
+.circle {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 6px 0;
+    border: 2px solid;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+    box-sizing:border-box;
+    display: inline-block;
+}
+.circleText {
+    border-radius: 4px;
+    width: 80px;
+    height: 32px;
+    padding: 6px 0;
+    border: 2px solid;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+    box-sizing:border-box;
+    display: inline-block;
+    color: #f8f9fa;
+    border-color:#000;
+    background-color: #000;
+    margin-left: 10px;
+}
+.circle .text-light {
+    color: #f8f9fa;
+}
+.first {
+    border-color:#ffc107;
+    background-color: #ffc107;
+}
+.second {
+    border-color:#007bff;
+    background-color: #007bff;
+}
+.third {
+    border-color:#dc3545;
+    background-color: #dc3545;
+}
+.fourth {
+    border-color:#6c757d;
+    background-color: #6c757d;
+}
+.fifth {
+    border-color:#28a745;
+    background-color: #28a745;
+}
+
+.plusCircle{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0 15px;
+    color: #666;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+    display:inline-block;
+    box-sizing: border-box;
+    position: relative;
+    top: 3px;
+}
+
+.plusCircle i.plus{
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.plusCircle i.plus:before{
+    content: ' ';
+    -webkit-mask-image: url("plus.svg");
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    background-color: currentColor;
+    padding: 0 0.5em;
+    /* margin: 0 0.125rem; */
+}
+
+.field {margin-bottom: 20px}
+a.btn {cursor:pointer;background-color: #ffc107;border-radius: 4px;padding: 4px;font-size: initial; margin:0 auto;}
+.box {border-radius: 4px;padding: 4px;font-size: initial;display: table;}
+.font_zero {font-size:0;}
+.table {display:table}
+.filtersNum .circle, .predictionNums .circle, .predictionNum .circle, .exceptNum .circle {margin-bottom:4px;}
+
+.lottoList, .secondList {
+    min-width: 340px;
+    width: 25%;
+    display: inline-block;
+    border-top:5px solid #000;
+}
+.testNum {display:block; margin:0 auto;}

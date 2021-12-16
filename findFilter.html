@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 예상번호</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <link href="./index.css" type="text/css" rel="stylesheet"/>
+    <div class="field font_zero fixedNum">
+        <input type="text" class="circle one">
+        <input type="text" class="circle two">
+        <input type="text" class="circle three">
+        <input type="text" class="circle four">
+        <input type="text" class="circle five">
+        <input type="text" class="circle six">
+        <div class="circleText">고정 수</div>
+        <!-- <input type="checkbox" class="btn fixedNum"> -->
+    </div>
+    <div class="field font_zero exceptNum">
+        <input type="text" class="circle one">
+        <input type="text" class="circle two">
+        <input type="text" class="circle three">
+        <input type="text" class="circle four">
+        <input type="text" class="circle five">
+        <input type="text" class="circle six">
+        <div class="circleText">제외 수</div> <br />
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <br />
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <br />
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <!-- <input type="checkbox" class="btn fixedNum"> -->
+    </div>
+    <div class="field font_zero filtersNum">
+        <!-- <input type="text" class="circle one">
+        <input type="text" class="circle two">
+        <input type="text" class="circle three">
+        <input type="text" class="circle four">
+        <input type="text" class="circle five">
+        <input type="text" class="circle six">
+        <div class="circleText">조건</div> <br />
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven">
+        <input type="text" class="circle seven"> -->
+        <!-- <input type="checkbox" class="btn fixedNum"> -->
+    </div>
+    <div class="field font_zero lastNum">
+        <input type="text" class="circle one">
+        <input type="text" class="circle two">
+        <input type="text" class="circle three">
+        <input type="text" class="circle four">
+        <input type="text" class="circle five">
+        <input type="text" class="circle six">
+        <div class="circleText">끝 수</div>
+        <!-- <input type="checkbox" class="btn fixedNum"> -->
+    </div>
+    <div class="field font_zero continuousNum">
+        <input type="checkbox" class="btn continuousNum">
+        <div class="circleText">연번</div>
+    </div>
+    <div class="field">
+        <a class="btn filter_generate">조건 생성</a>
+    </div>
+    <div class="lottoListWarp">
+        <ul class="lottoList">
+        </ul>
+        <ul class="line">
+            <li></li>
+        </ul>
+    </div>
+    <script src="./findFilter.js"></script>
+</body>
+</html>

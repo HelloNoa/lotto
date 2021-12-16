@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 예상번호</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body style="text-align:center">
+    <link href="./index.css" type="text/css" rel="stylesheet"/>
+    <div class="field">
+        <input type="text" class="lottoListCount">
+        <a class="btn lottoListCount_btn">회차 조건 변경</a>
+    </div>
+    <div class="field font_zero search">
+        <div class="chasu"> : </div>
+        <input type="text" class="circle one">
+        <input type="text" class="circle two">
+        <input type="text" class="circle three">
+        <input type="text" class="circle four">
+        <input type="text" class="circle five">
+        <input type="text" class="circle six">
+        <div class="plusCircle"><i class="plus"></i></div>
+        <input type="text" class="circle seven">
+        <a class="btn table FilterLottoCorrectNumber_btn">조건 검색</a>
+        <a class="btn table StrongFilterLottoCorrectNumber_btn">강한 조건 검색</a>
+        <a class="btn table StrongerFilterLottoCorrectNumber_btn">자릿수 강한 조건 검색</a>
+        <span style="font-size:18px;">다음 회차까지 선택</span><input type="checkbox" class="include_next_case"/>
+    </div>
+    <div class="lottoListWarp">
+        <ul class="testNum font_zero">
+            <div class="chasu">&nbsp;</div>
+            <input type="text" class="circle one">
+            <input type="text" class="circle two">
+            <input type="text" class="circle three">
+            <input type="text" class="circle four">
+            <input type="text" class="circle five">
+            <input type="text" class="circle six">
+            <div class="plusCircle"><i class="plus"></i></div>s
+            <input type="text" class="circle seven">
+        </ul>
+        <input type="checkbox" class="btn testNum" checked>
+        <ul class="lottoList">
+        </ul>
+        <ul class="secondList" style="display:none">
+        </ul>
+        <ul class="line">
+            <li></li>
+        </ul>
+    </div>
+    <script src="./filter.js"></script>
+</body>
+</html>
