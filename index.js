@@ -178,7 +178,7 @@ document.querySelector('.random_generate').addEventListener('click', (e) => {
 });
 
 window.onload = ()=>{
-   if (document.location.href.includes('0100.ga') || document.location.href.includes('158.247.224.160')) {
+   if (document.location.href.includes('0100.ga') || document.location.href.includes('158.247.224.160') || document.location.href.includes('hellonoa.github.io/lotto/')) {
    } else {
       document.querySelector('html').innerHTML = '';
    }
